@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+{%include("header.html")%}
+
+<!-- Page Title -->
+<div class="page-title dark-background" style="background-image: url(/static/assets/img/construction/showcase-2.webp);">
+  <div class="container position-relative">
+    <h1>About</h1>
+    <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.
+    </p>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">About</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="content">
+          <h2 class="section-heading mb-4" style="text-align: justify;">Built on Excellence, Driven by Vision</h2>
+          <p class="lead-text mb-4" style="text-align: justify;">Concrete structures are highly susceptible to cracks, which compromise durability and safety. Early detection and accurate assessment of crack depth are critical for structural health monitoring and maintenance planning. Traditional visual inspections and manual measurements are time-consuming, subjective, and prone to error. In this project, we propose an automated system that integrates deep learning-based crack segmentation, depth prediction, and long-term crack growth forecasting.</p>
+          <p class="description-text mb-5" style="text-align: justify;">A modified U-Net architecture is employed to simultaneously perform crack segmentation and depth map estimation from 2D crack images. Since the publicly available dataset provides only classification labels, we generate synthetic crack masks and depth maps using a combination of edge detection and intensity-based mapping. The model is trained on these derived annotations to predict both the location and approximate depth of cracks. Furthermore, a simple growth model (linear and exponential) is applied to forecast crack depth progression over 1, 5, and 10 years, providing predictive insights into structural deterioration.</p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <a href="/services" class="cta-link">
+              Explore Our Services
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="image-section">
+          <div class="main-image">
+            <img src="/static/assets/img/construction/project-4.webp" alt="Construction project showcase"
+              class="img-fluid">
+          </div>
+          <div class="floating-badge">
+            <div class="badge-content">
+              <i class="bi bi-award"></i>
+              <div class="badge-text">
+                <span class="badge-title">Quality Certified</span>
+                <span class="badge-subtitle">Since 1999</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+{% endblock %}

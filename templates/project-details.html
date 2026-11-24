@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block content %}
+
+{%include("header.html")%}
+
+
+    <!-- Page Title -->
+    <div class="page-title dark-background"  style="background-image: url(/static/assets/img/construction/showcase-2.webp);">
+      <div class="container position-relative">
+        <h1>Portfolio Details</h1>
+        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li class="current">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="project-details section">
+     
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="project-hero">
+              <img src="/static/project_pic/{{projects[16]}}" alt="Luxury Office Complex" class="img-fluid">
+              <div class="project-hero-overlay">
+                <div class="project-status">{{projects[15]}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="category">{{projects[1]}}</span>
+                <span class="location">{{projects[2]}}</span>
+              </div>
+              <h1 class="project-title">{{projects[3]}}</h1>
+              <p class="project-description">{{projects[14]}}</p>
+
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="label">Duration</span>
+                  <span class="value">{{projects[8]}} Months</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Area</span>
+                  <span class="value">{{projects[5]}} sq ft</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Client</span>
+                  <span class="value">{{projects[6]}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-specs">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="specs-content">
+                <h3>Technical Specifications</h3>
+                <div class="specs-grid">
+                  <div class="spec-item">
+                    <span class="spec-label">Building Height</span>
+                    <span class="spec-value">{{projects[8]}}</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Foundation Type</span>
+                    <span class="spec-value">{{projects[9]}}</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Facade Material</span>
+                    <span class="spec-value">{{projects[10]}}</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Parking Spaces</span>
+                    <span class="spec-value">{{projects[11]}} units</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">Energy Rating</span>
+                    <span class="spec-value">{{projects[12]}}</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="specs-visual">
+                <img src="/static/assets/img/construction/project-9.webp" alt="Technical Drawing" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Project Details Section -->
+
+ {% endblock %}
